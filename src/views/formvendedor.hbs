@@ -1,0 +1,175 @@
+<div class="container-fluid text-center">
+  <div class="row content">
+    <div class="col-sm-1 sidenav">
+      <!-- SIDNAV1 -->
+    </div>
+    <div class="col-sm-10 text-left contenedor">
+      <div class="contenedor-form">
+        <div class="">
+          <form action="/novo-vendedor" method="POST">
+            <h5>DADOS CONTATO DE VENDEDOR</h5>
+            <div class="form-row">
+              <div class="form-group col-md-1 oculto">
+                <label for="inputVenda"></label>
+                <input class="form-control " name="inputVenda" value="Vendedor">
+              </div>
+              <div class="form-group col-md-4">
+                <label for="inputNome4">Nome e sobrenome</label>
+                <input type="text" class="form-control" name="inputNome4" placeholder="Nome do contato de compras"
+                  autofocus>
+              </div>
+              <div class="form-group col-md-3">
+                <label for="inputEmail4">Email</label>
+                <input type="email" class="form-control" name="inputEmail4" placeholder="Email">
+              </div>
+              <div class="form-group col-md-2">
+                <label for="inputFone">Telefone</label>
+                <input type="text" class="form-control" name="inputFone" placeholder="Telefone de contato">
+              </div>
+              <div class="form-group col-md-2">
+                <label for="inputCelfone">Celular Whatsapp</label>
+                <input type="text" class="form-control" name="inputCelfone" placeholder="Celular">
+              </div>
+              <div class="form-group col-md-1">
+                <label for=""></label>
+                <p class="form-control" name="" value=""></P>
+              </div>
+              <div class="form-group col-md-3">
+                <label for="inputPassword4">Senha</label>
+                <input type="password" class="form-control" name="inputPassword4" placeholder="Senha">
+              </div>
+              <div class="form-group col-md-3">
+                <label for="inputConfPassword4">Confirmar Senha</label>
+                <input type="password" class="form-control" name="inputConfPassword4" placeholder="Confirmar Senha">
+              </div>
+            </div>
+            <h5>DADOS COMERCIAIS</h5>
+            <div class="form-row">
+              <div class="form-group col-md-4">
+                <label for="inputRaSoc">Razão Social</label>
+                <input type="text" class="form-control" name="inputRaSoc" placeholder="Razão Social">
+              </div>
+              <div class="form-group col-md-1">
+                <label for="inputEndFis">Endereço Fiscal</label>
+                <select name="inputEndFis" class="form-control">
+                  <option class="mt-10" selected>Escolher...</option>
+                  <option>CUIT</option>
+                  <option>CNPJ</option>
+                  <option>RUT</option>
+                  <option>RUC</option>
+                  <option>NIT</option>
+                </select>
+              </div>
+              <div class="form-group col-md-3">
+                <label for="inputEndFis">Endereço Fiscal</label>
+                <input type="text" class="form-control" name="inputEndFis" placeholder="1.000.111.0">
+              </div>
+              <div class="form-group col-md-4">
+                <label for="inputAddress">Endereço</label>
+                <input type="text" class="form-control" name="inputAddress" placeholder="Rua dos Bobos, nº 0">
+              </div>
+              <div class="form-group col-md-4">
+                <label for="inputCity">Cidade</label>
+                <input type="text" class="form-control" name="inputCity">
+              </div>
+              <div class="form-group col-md-2">
+                <label for="inputEstado">Estado</label>
+                <input type="text" class="form-control" name="inputEstado" placeholder="Estado">
+              </div>
+              <div class="form-group col-md-1">
+                <label for="inputPais">Pais</label>
+                <select name="inputEstado" class="form-control">
+                  <option selected>Escolher...</option>
+                  <option>Argentina</option>
+                  <option>Bolivia</option>
+                  <option>Brasil</option>
+                  <option>Colombia</option>
+                  <option>Chile</option>
+                  <option>Ecuador</option>
+                  <option>Paraguay</option>
+                  <option>Perú</option>
+                  <option>Uruguay</option>
+                  <option>Venezuela</option>
+                </select>
+              </div>
+              <div class="form-group col-md-2">
+                <label for="inputCEP">CEP</label>
+                <input type="text" class="form-control" name="inputCEP">
+              </div>
+              <div class="form-group col-md-3">
+                <label for="inputRamo">Setor economico</label>
+                <select name="inputRamo" class="form-control">
+                  <option selected>Escolher...</option>
+                  <option>Industria</option>
+                  <option>Comercio</option>
+                  <option>Serviços</option>
+                </select>
+              </div>
+              <div class="form-group col-md-12">
+                <label for="inputDes">Descrição da empresa</label>
+                <textarea type="text" class="form-control" name="inputDes">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised</textarea>
+              </div>
+            </div>
+            <h5>ESPECIFIQUE OS PRODUTOS OFERECIDOS</h5>
+            <P>MINIMO CINCO CAMPOS</P>
+            <div class="form-row">
+              <div class="form-group col-md-3">
+                <label for="inputProduto">Vende</label>
+                <input type="text" class="form-control" name="inputProduto"
+                  placeholder="Papel A4, Lapiz, Caneta, etc.">
+              </div>
+              <div class="form-group col-md-3">
+                <label for="inputProduto">Vende</label>
+                <input type="text" class="form-control" name="inputProduto"
+                  placeholder="Papel A4, Lapiz, Caneta, etc.">
+              </div>
+              <div class="form-group col-md-3">
+                <label for="inputProduto">Vende</label>
+                <input type="text" class="form-control" name="inputProduto"
+                  placeholder="Papel A4, Lapiz, Caneta, etc.">
+              </div>
+              <div class="form-group col-md-3">
+                <label for="inputProduto">Vende</label>
+                <input type="text" class="form-control" name="inputProduto"
+                  placeholder="Papel A4, Lapiz, Caneta, etc.">
+              </div>
+              <div class="form-group col-md-3">
+                <label for="inputProduto">Vende</label>
+                <input type="text" class="form-control" name="inputProduto"
+                  placeholder="Papel A4, Lapiz, Caneta, etc.">
+              </div>
+              <div class="form-group col-md-3">
+                <label for="inputProduto">Vende</label>
+                <input type="text" class="form-control" name="inputProduto"
+                  placeholder="Papel A4, Lapiz, Caneta, etc.">
+              </div>
+              <div class="form-group col-md-3">
+                <label for="inputProduto">Vende</label>
+                <input type="text" class="form-control" name="inputProduto"
+                  placeholder="Papel A4, Lapiz, Caneta, etc.">
+              </div>
+              <div class="form-group col-md-3">
+                <label for="inputProduto">Vende</label>
+                <input type="text" class="form-control" name="inputProduto"
+                  placeholder="Papel A4, Lapiz, Caneta, etc.">
+              </div>
+            </div>
+        </div>
+        <div class="form-group">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="gridCheck">
+            <label class="form-check-label" for="gridCheck">
+              Clique em mim
+            </label>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Entrar</button>
+        <a class="btn btn-primary" href="/">Voltar</a>
+        </form>
+      </div>
+    </div>
+    <div class="col-sm-1 sidenav">
+      <!-- SIDNAV2 -->
+    </div>
+  </div>
+</div>
