@@ -19,9 +19,29 @@
   .nav {
     height: 50px;
     background-color: #0c0c0c;
+    margin: 0PX;
   }
+
+  .boxs {
+    padding: 10px;
+    box-shadow: 0px 0px 2px  rgb(155, 143, 143, 0.9);
+    margin-bottom: 8px;
+    margin-top: 8px;
+  }
+
+ .rows {
+   margin: 2px;
+ }
   
   /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+  .topo {
+    background: #0c0c0c ;
+    text-align: center;
+    margin: 0px 2px 0px 2px;
+    color: blanchedalmond;
+    padding: 3px;
+  }
+  
   .row.content {
     height: 600px;
     padding-top: 5px;
@@ -58,7 +78,7 @@
   }
   /* Set gray background color and 100% height */
   .sidenav {
-    padding-top: 20px;
+    padding-top: 10px;
     background-color: #0c0c0c;
     height: 100%;
   }
@@ -69,9 +89,16 @@
   }
 
   .lateralOne {
-    margin-top: 0px;
-    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-bottom: 5px;
     padding: 7%;
+  }
+
+  .filtro {
+    margin: 0px;
+    padding: 0px;
+    height: 30px;
+    color: blanchedalmond;
   }
   
   /* Set black background color, white text and some padding */
