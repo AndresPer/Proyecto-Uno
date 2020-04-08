@@ -2,17 +2,17 @@
     <div class="row content">
         <div class="col-sm-2 sidenav">
             <div class="card-header borde">
-                <p>Ola {{inputNome4}} voce esta logado no modo Comprador</p>
+                <p>Ola {{inputNome4}} voce esta logado no modo Vendedor</p>
             </div>
             <div class="lateral">
                 <div >
                     <img src="https://media-exp1.licdn.com/dms/image/C4E03AQGsRdqaIE5gjA/profile-displayphoto-shrink_200_200/0?e=1590624000&v=beta&t=W6lG8JI6u27WZU7T6a-wHVjXtQ-6PEwQHQP_LiOG9eQ"
                         alt="" class="img-fluid rounded-circle lateralOne">
                     <div class="nav-item">
-                    <a class="nav-link" href="#" >INDUSTRIA</a>
-                    <a class="nav-link" href="#" >COMERCIO</a>
-                    <a class="nav-link" href="#" >SERVIÇOS</a>
-                    <a class="nav-link" href="#" >CONTATOS</a>
+                    <a class="nav-link filtro" href="#" >INDUSTRIA</a>
+                    <a class="nav-link filtro" href="#" >COMERCIO</a>
+                    <a class="nav-link filtro" href="#" >SERVIÇOS</a>
+                    <a class="nav-link filtro" href="#" >CONTATOS</a>
                     </div>
                 </div>
             </div>
@@ -97,11 +97,9 @@
                                 </div>
                                 {{/each}}
                             </div>
-                            {{else}}
-                            <h1>Não existe ninguem</h1>
-                            {{/if}}
-                        
-                    
+                        {{else}}
+                        <h1>Não existe ninguem</h1>
+                     {{/if}}
                 </div>
             </div>
         </div>
