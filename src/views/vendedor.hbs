@@ -1,19 +1,39 @@
 <div class="container-fluid text-center">
-    <div class="row content">
-        <div class="col-sm-2 sidenav">
-            <div class="card-header borde">
+    <div class="row content vendedor">
+        <div class="col-sm-2 sidenav vendedor">
+            <div class=" borde">
                 <p>Ola {{inputNome4}} voce esta logado no modo Vendedor</p>
             </div>
             <div class="lateral">
-                <div >
+                <div>
                     <img src="https://media-exp1.licdn.com/dms/image/C4E03AQGsRdqaIE5gjA/profile-displayphoto-shrink_200_200/0?e=1590624000&v=beta&t=W6lG8JI6u27WZU7T6a-wHVjXtQ-6PEwQHQP_LiOG9eQ"
                         alt="" class="img-fluid rounded-circle lateralOne">
-                    <div class="nav-item">
-                    <a class="nav-link filtro" href="#" >INDUSTRIA</a>
-                    <a class="nav-link filtro" href="#" >COMERCIO</a>
-                    <a class="nav-link filtro" href="#" >SERVIÇOS</a>
-                    <a class="nav-link filtro" href="#" >CONTATOS</a>
-                    </div>
+                </div>
+                <div class="nav-lat">
+                    <a href="#">
+                        <div class="icon">
+                            <i class="fa fa-industry" aria-hidden="true"></i>
+                            <span class="dato">INDUSTRIA</span>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="icon">
+                            <i class="fa fa-building" aria-hidden="true"></i>
+                            <span class="dato">COMERCIO</span>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="icon">
+                            <i class="fa fa-cogs" aria-hidden="true"></i>
+                            <span class="dato">SERVIÇOS</span>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="icon">
+                            <i class="fa fa-envelope" aria-hidden="true"></i>
+                            <span class="dato">CONTATOS</span>
+                        </div>
+                    </a>
                 </div>
             </div>
             <div class="lateral">
@@ -37,70 +57,112 @@
                         </div>
                         <div class="form-group col-md-12">
                             <select name="inputRamo" class="form-control filtro">
-                                <option selected>Escolher..</option>
+                                <option selected>Escolher...</option>
                                 <option>Industria</option>
                                 <option>Comercio</option>
                                 <option>Serviços</option>
                             </select>
                         </div>
-                        <div class="form-group col-md-12">     
-                            <input type="text" class="form-control filtro" placeholder="Produto."autofocus>
+                        <div class="form-group col-md-12">
+                            <input type="text" class="form-control filtro" placeholder="Produto." autofocus>
                         </div>
                     </div>
                 </form>
             </div>
         </div>
         <div class="col-sm-10 text-left contenedor">
-            <div class="topo ">
-            <div class="row">
-                <div class="col-md-4 ">
-                    <h4>DESCRIÇÃO</h4>
-                </div>
-                <div class="col-md-5">
-                    <h4>DADOS DA EMPRESA</h4>
-                </div>
-                <div class="col-md-3">
-                    <h4>DADOS DE CONTATO</h4>
+            <div class="topo">
+                <div class="row">
+                    <div class="col-md-4 ">
+                        <h4>DESCRIÇÃO</h4>
+                    </div>
+                    <div class="col-md-5">
+                        <h4>DADOS DA EMPRESA</h4>
+                    </div>
+                    <div class="col-md-3">
+                        <h4>DADOS DE CONTATO</h4>
+                    </div>
                 </div>
             </div>
-        </div>
             <div class="contenedor-form">
                 <div class="">
                     <div class="container col-md-12">
-                            {{#if comprador}}
-                            <div class="col-md-12 borde">
-                                {{#each comprador}}
-                                    <div class="row rows">
-                                        <!--<div class="col-md-1 card">
+                        {{#if comprador}}
+                        <div class="col-md-12 borde">
+                            {{#each comprador}}
+                            <div class="row rows">
+                                <!--<div class="col-md-1 card">
                                             <img src="http://prints.ultracoloringpages.com/81463b1d918910e90ea4171935a665b1.png"
                                                 style="width: 100%;">
                                         </div>-->
-                                        <div class="col-md-4 boxs">
-                                            <h5>{{inputRamo}}</h5>{{inputDes}}
-                                        </div>
-                                        <div class="col-md-5 boxs">
-                                            <h5>{{inputRaSoc}}</h5>
-                                            <h5>Endereço:<br>{{inputAddress}}
-                                                , {{inputCity}}
-                                                , {{inputEstado}}
-                                            </h5>
-                                            <h5>Compra:<br> {{inputProduto}}</h5>
-                                        </div>
-                                        <div class="col-md-3 boxs">
-                                            <p class="contato">Contato do comprador </p> 
-                                            <p>   {{inputNome4}} </p>
-                                            <p> | Telefone {{inputFone}} </p>
-                                            <p> | Celular {{inputCelfone}}</p>
-                                            <p> | e-mail {{inputEmail4}}</p>
-                                        </div>
-                                    </div>
+                                <div class="col-md-4 boxs">
+                                    <p class="dato">{{inputRamo}}</p>
+                                    <p>{{inputDes}}</p>
                                 </div>
-                                {{/each}}
+                                <div class="col-md-5 boxs">
+                                    <p class="dato">{{inputRaSoc}}</p>
+                                    <p>Endereço:<br>{{inputAddress}}
+                                        , {{inputCity}}
+                                        , {{inputEstado}}
+                                    </p>
+                                    <p class="dato">Oferece:<br> {{inputProduto}}</p>
+                                </div>
+                                <div class="col-md-3 boxs">
+                                    <p class="dato">Contato do comprador </p>
+                                    <p> {{inputNome4}} </p>
+                                    <p> | Telefone {{inputFone}} </p>
+                                    <p> | Celular {{inputCelfone}}</p>
+                                    <p> | e-mail {{inputEmail4}}</p>
+                                </div>
                             </div>
-                        {{else}}
-                        <h1>Não existe ninguem</h1>
-                     {{/if}}
+                        </div>
+                        {{/each}}
+                    </div>
+                    {{else}}
+                    <h1>Não existe ninguem</h1>
+                    {{/if}}
                 </div>
+            </div>
+        </div>
+        <div class="row vendedor">
+            <div class="footer col-dm-4">
+                <p class="">Todos os direitos reservados Pepper Productyon</p>
+            </div>
+            <div class="nav col-dm-8 ml-auto">
+                <ul class="nav ">
+                    <li>
+                        <a href="/comprador">
+                            <div class="icon">
+                                <i class="fa fa-user" aria-hidden="true"></i>
+                            </div>
+                            <div class="name" data-text="Comprador">Comprador</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/formcomprador">
+                            <div class="icon">
+                                <i class="fa fa-address-card-o" aria-hidden="true"></i>
+                            </div>
+                            <div class="name" data-text="Registro Comprador">Registro Comprador</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/formvendedor">
+                            <div class="icon">
+                                <i class="fa fa-address-card-o" aria-hidden="true"></i>
+                            </div>
+                            <div class="name" data-text="Registro Vendedor">Registro Vendedor</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="icon">
+                                <i class="fa fa-sign-out" aria-hidden="true"></i>
+                            </div>
+                            <div class="name" data-text="Sair">Sair</div>
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>

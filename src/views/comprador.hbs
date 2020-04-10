@@ -1,24 +1,49 @@
 <div class="container-fluid text-center">
-    <div class="row content">
-        <div class="col-sm-2 sidenav">
-            <div class="card-header borde">
+    <div class="row content comprador">
+        <div class="col-sm-2 sidenav comprador">
+            <div class=" borde">
                 <p>Ola {{inputNome4}} voce esta logado no modo Comprador</p>
             </div>
             <div class="lateral">
                 <div >
                     <img src="https://media-exp1.licdn.com/dms/image/C4E03AQGsRdqaIE5gjA/profile-displayphoto-shrink_200_200/0?e=1590624000&v=beta&t=W6lG8JI6u27WZU7T6a-wHVjXtQ-6PEwQHQP_LiOG9eQ"
                         alt="" class="img-fluid rounded-circle lateralOne">
-                    <div class="nav-item">
-                    <a class="nav-link filtro" href="#" >INDUSTRIA</a>
-                    <a class="nav-link filtro" href="#" >COMERCIO</a>
-                    <a class="nav-link filtro" href="#" >SERVIÇOS</a>
-                    <a class="nav-link filtro" href="#" >CONTATOS</a>
-                    </div>
+                </div>
+                <div class="nav-lat">
+                    <a href="#">
+                        <div class="icon">
+                            <i class="fa fa-industry" aria-hidden="true"></i>
+                            <span class="dato">INDUSTRIA</span>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="icon">
+                            <i class="fa fa-building" aria-hidden="true"></i>
+                            <span class="dato">COMERCIO</span>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="icon">
+                            <i class="fa fa-cogs" aria-hidden="true"></i>
+                            <span class="dato">SERVIÇOS</span>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="icon">
+                            <i class="fa fa-envelope" aria-hidden="true"></i>
+                            <span class="dato">CONTATOS</span>
+                        </div>
+                    </a>
                 </div>
             </div>
             <div class="lateral">
                 <form action="" method="">
-                    <button type="submit" class="btn-primary col-md-12">Filtrar</button>
+                    <a href="#">
+                        <div class="icon form-group col-md-12">
+                            <i class="fa fa-search-plus" aria-hidden="true"></i>
+                            <span class="dato">PESQUISAR</span>
+                        </div>
+                    </a>
                     <div class="form-row">
                         <div class="form-group col-md-12">
                             <select name="inputEstado" class="form-control filtro">
@@ -76,18 +101,19 @@
                                                 style="width: 100%;">
                                         </div>-->
                                         <div class="col-md-4 boxs">
-                                            <h5>{{inputRamo}}</h5>{{inputDes}}
+                                            <p class="dato">{{inputRamo}}</p>
+                                            <p>{{inputDes}}</p>
                                         </div>
                                         <div class="col-md-5 boxs">
-                                            <h5>{{inputRaSoc}}</h5>
-                                            <h5>Endereço:<br>{{inputAddress}}
+                                            <p class="dato">{{inputRaSoc}}</p>
+                                            <p>Endereço:<br>{{inputAddress}}
                                                 , {{inputCity}}
                                                 , {{inputEstado}}
-                                            </h5>
-                                            <h5>Vende:<br> {{inputProduto}}</h5>
+                                            </p>
+                                            <p class="dato">Oferece:<br> {{inputProduto}}</p>
                                         </div>
                                         <div class="col-md-3 boxs">
-                                            <p class="contato">Contato do vendedor </p> 
+                                            <p class="dato">Contato do vendedor </p> 
                                             <p>   {{inputNome4}} </p>
                                             <p> | Telefone {{inputFone}} </p>
                                             <p> | Celular {{inputCelfone}}</p>
@@ -99,8 +125,49 @@
                             </div>
                         {{else}}
                         <h1>Não existe ninguem</h1>
-                     {{/if}}
+                    {{/if}}
                 </div>
+            </div>
+        </div>
+         <div class="row comprador">
+            <div class="footer col-dm-4">
+                <p class="">Todos os direitos reservados Pepper Productyon</p>
+            </div>
+            <div class="nav col-dm-8 ml-auto">
+                <ul class="nav ">
+                    <li>
+                        <a href="/vendedor">
+                            <div class="icon">
+                                <i class="fa fa-user" aria-hidden="true"></i> 
+                            </div>
+                            <div class="name" data-text="Vendedor">Vendedor</div>
+                        </a>
+                    </li>
+                     <li>
+                        <a href="/formcomprador">
+                            <div class="icon">
+                                <i class="fa fa-address-card-o" aria-hidden="true"></i>
+                            </div>
+                            <div class="name" data-text="Registro Comprador">Registro Comprador</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/formvendedor">
+                            <div class="icon">
+                                <i class="fa fa-address-card-o" aria-hidden="true"></i>
+                            </div>
+                            <div class="name" data-text="Registro Vendedor">Registro Vendedor</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="icon">
+                                <i class="fa fa-sign-out" aria-hidden="true"></i>
+                            </div>
+                            <div class="name" data-text="Sair">Sair</div>
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>

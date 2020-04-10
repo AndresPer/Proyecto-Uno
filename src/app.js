@@ -20,8 +20,6 @@ app.use(express.urlencoded({extended: false}));
 
 // routes
 app.use(require('./routes/index'));
-//app.use(require('./routes/comprador'));
-//app.use(require('./routes/vendedor'));
 
 // static files
 app.use(express.static(path.join(__dirname, 'public')));

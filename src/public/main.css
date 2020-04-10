@@ -2,48 +2,128 @@
  body {
    overflow: hidden;
    font-family: 'Muli', sans-serif;
+   color: #050708;
  }
 
  .borde {
+  width: 100%;
   margin: 0px;
   padding: 0px;
  }
 
- .navbar {
-    margin-bottom: 0;
-    border-radius: 0;
-    color: grey;
-
-  }
-
+ /* MENU FOOTER ---------------------------------*/
   .nav {
     height: 50px;
-    background-color: #0c0c0c;
-    margin: 0PX;
+    margin: 0;
   }
+
+  .nav ul {
+    padding: 0;
+  }
+
+  .nav ul li {
+    list-style: none;
+    text-align: center;
+    display: block;
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+  }
+
+  .nav ul li:last-child {
+    border-right: none;
+  }
+
+  .nav ul li a {
+    padding: 0 50px;
+    display: block;
+    color:rgb(104, 99, 99);
+    text-decoration: none;
+  }
+
+  .nav ul li a .icon .fa {
+    font-size: 20px;
+    color: rgb(104, 99, 99);
+  }
+
+  .nav ul li a:hover {
+    color: #050708;
+  }
+
+  .nav ul li a:hover .icon .fa {
+    color: #050708;
+  }
+
+/* MENU FOOTER ---------------------------------*/
+/* MENU LATERAL ---------------------------------*/
+.nav-lat {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-lat a {
+  color:rgb(104, 99, 99);
+  text-decoration: none;
+  text-align: center;
+}
+
+.nav-lat a .icon .fa {
+  margin-bottom: 8px;
+  margin-right: 20px;
+  font-size: 20px;
+  color: rgb(104, 99, 99);
+}
+
+.nav-lat a:hover {
+  color: #050708;
+}
+
+.nav-lat a:hover .icon .fa {
+  color: #050708;
+}
+/* MENU LATERAL ---------------------------------*/
 
   .boxs {
     padding: 10px;
     box-shadow: 0px 0px 2px  rgb(155, 143, 143, 0.9);
-    margin-bottom: 8px;
-    margin-top: 8px;
+    background-color: white;
   }
 
  .rows {
    margin: 2px;
+   margin-bottom: 10px;
+    margin-top: 10px;
+   background-color: white;
  }
+
+ .vendedor {
+  background-color: teal;
+}
+
+.comprador {
+ background-color: tomato;
+}
+
+.service {
+  background-color: cyan;
+}
+
+.nav a:hover {
+  color: #555;
+}
   
+.dato {
+  font-size: 16px;
+  text-align: justify;
+}
   /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
   .topo {
-    background: #0c0c0c ;
     text-align: center;
     margin: 0px 2px 0px 2px;
-    color: blanchedalmond;
     padding: 3px;
   }
   
   .row.content {
-    height: 600px;
+    height: 575px;
     padding-top: 5px;
     }
     
@@ -60,7 +140,7 @@
 
    .contenedor-form {
     width: 100%;
-    height: 540px;
+    height: 520px;
     margin: auto;
     overflow: auto;
    } 
@@ -79,7 +159,6 @@
   /* Set gray background color and 100% height */
   .sidenav {
     padding-top: 10px;
-    background-color: #0c0c0c;
     height: 100%;
   }
 
@@ -98,14 +177,15 @@
     margin: 0px;
     padding: 0px;
     height: 30px;
-    color: blanchedalmond;
   }
   
   /* Set black background color, white text and some padding */
-  footer {
-    background-color: #555;
-    color: white;
-    padding: 15px;
+ 
+  .footer {
+    color:black;
+    padding: 20px 30px;
+    line-height: 10px;
+    margin: 0;
   }
   
   /* On small screens, set height to 'auto' for sidenav and grid */
